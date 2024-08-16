@@ -1,0 +1,111 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int score = 0;
+    int answer;
+    
+    cout << "Welcome to the C++ Quiz Game!" << endl;
+    cout << "Answer the following questions by typing the number corresponding to your choice." << endl;
+    cout << endl;
+
+    // Question 1
+    cout << "1. Who developed the C++ programming language?" << endl;
+    cout << "1) James Gosling" << endl;
+    cout << "2) Dennis Ritchie" << endl;
+    cout << "3) Bjarne Stroustrup" << endl;
+    cout << "4) Guido van Rossum" << endl;
+    cout << "Your answer: ";
+    cin >> answer;
+    
+    if(answer == 3) {
+        cout << "Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 3) Bjarne Stroustrup." << endl;
+    }
+    cout << endl;
+
+    // Question 2
+    cout << "2. What is the extension of a C++ source file?" << endl;
+    cout << "1) .cpp" << endl;
+    cout << "2) .java" << endl;
+    cout << "3) .py" << endl;
+    cout << "4) .cs" << endl;
+    cout << "Your answer: ";
+    cin >> answer;
+    
+    if(answer == 1) {
+        cout << "Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 1) .cpp." << endl;
+    }
+    cout << endl;
+
+    // Question 3
+    cout << "3. Which of the following is used to define a constant in C++?" << endl;
+    cout << "1) #define" << endl;
+    cout << "2) const" << endl;
+    cout << "3) Both of the above" << endl;
+    cout << "4) None of the above" << endl;
+    cout << "Your answer: ";
+    cin >> answer;
+    
+    if(answer == 3) {
+        cout << "Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 3) Both of the above." << endl;
+    }
+    cout << endl;
+
+    // Question 4
+    cout << "4. Which of the following is not a C++ data type?" << endl;
+    cout << "1) int" << endl;
+    cout << "2) float" << endl;
+    cout << "3) string" << endl;
+    cout << "4) bool" << endl;
+    cout << "Your answer: ";
+    cin >> answer;
+    
+    if(answer == 3) {
+        cout << "Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 3) string." << endl;
+    }
+    cout << endl;
+
+    // Question 5
+    cout << "5. What does OOP stand for?" << endl;
+    cout << "1) Object Oriented Programming" << endl;
+    cout << "2) Organized Object Programming" << endl;
+    cout << "3) Operation Oriented Programming" << endl;
+    cout << "4) Object Organized Programming" << endl;
+    cout << "Your answer: ";
+    cin >> answer;
+    
+    if(answer == 1) {
+        cout << "Correct!" << endl;
+        score++;
+    } else {
+        cout << "Wrong! The correct answer is 1) Object Oriented Programming." << endl;
+    }
+    cout << endl;
+
+    // Final score
+    cout << "Your final score is: " << score << " out of 5" << endl;
+
+    if (score == 5) {
+        cout << "Excellent! You're a C++ pro!" << endl;
+    } else if (score >= 3) {
+        cout << "Good job! You have a solid understanding of C++." << endl;
+    } else {
+        cout << "Keep practicing, you'll get there!" << endl;
+    }
+
+    return 0;
+}
